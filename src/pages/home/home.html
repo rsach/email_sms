@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Phone No</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-list>
+
+
+
+  <ion-item>  
+    <ion-label color="primary">{{email}}</ion-label>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label floating>Enter the Phone no</ion-label>
+    <ion-input type="tel" [(ngModel)]="phone"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <button ion-button round type="submit" (click)="onSend()" >
+      <ion-icon name="send"></ion-icon>
+
+    </button>
+
+  </ion-item>
+
+</ion-list>
+
+
+</ion-content>
